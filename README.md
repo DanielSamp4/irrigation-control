@@ -1,4 +1,4 @@
-# Control plants irrigation project using ESP32
+# Control plants irrigation using ESP32
 
 A challenge made by Neurobots
 
