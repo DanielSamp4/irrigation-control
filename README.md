@@ -8,4 +8,4 @@ This project consist in creat a system that can irrigate plants based on day per
 
 ### System
 
-<div align="center"><img alt="Overview" width="460" src="docs/images/ov.png" />&emsp;&emsp;&emsp;<img alt="Captiveportal" width="182" src="docs/images/ov.gif" /></div>
+<div align="center"><img alt="Block Diagram" width="460" src="docs/images/Block-Diagram.png" />&emsp;&emsp;&emsp;<img alt="Captiveportal" width="182" src="docs/images/Block-Diagram.png" /></div>
