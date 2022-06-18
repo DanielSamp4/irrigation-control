@@ -22,3 +22,4 @@ Both LDR and Sensor Humidity are analog devices, therefore can be atached to any
 
 For Activate the valvula solenoide, must be a output GPIO (anyone except 34, 35, 36, 39 because they are input only).
 
+a
