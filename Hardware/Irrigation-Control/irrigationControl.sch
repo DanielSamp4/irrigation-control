@@ -5543,6 +5543,52 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="1.3" y1="-2.3" x2="1.3" y2="-1.8" width="0.2" layer="21"/>
 <wire x1="-1.3" y1="-1.8" x2="1.3" y2="-1.8" width="0.2" layer="21"/>
 </package>
+<package name="JST-XH-03-PACKAGE-LONG-PAD">
+<description>&lt;b&gt;JST XH Connector Long Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="4.95" y1="-2.3575" x2="4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="4.95" y1="3.3925" x2="-4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="3.3925" x2="-4.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="-2.3575" x2="4.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.555" y="-2.04" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.6025" y="3.8925" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-2.6" y1="-2.3" x2="-2.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.3" x2="2.5" y2="-1.8" width="0.254" layer="21"/>
+</package>
+<package name="JST-XH-03-PACKAGE-ROUND-PAD">
+<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="4.95" y1="-2.3575" x2="4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="4.95" y1="3.3925" x2="-4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="3.3925" x2="-4.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="-2.3575" x2="4.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<text x="-5.555" y="-2.04" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.6025" y="3.8925" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-2.6" y1="-2.3" x2="-2.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.3" x2="2.5" y2="-1.8" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M">
@@ -5586,6 +5632,44 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-XH-03-PIN" prefix="X">
+<description>&lt;b&gt;JST XH Connector 2 Pin&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="-1" symbol="MV" x="2.54" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="2.54" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="2.54" y="2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-LONG-PAD" package="JST-XH-03-PACKAGE-LONG-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-ROUND-PAD" package="JST-XH-03-PACKAGE-ROUND-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5752,6 +5836,89 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 </deviceset>
 </devicesets>
 </library>
+<library name="dp_devices">
+<description>Dangerous Prototypes Standard PCB sizes
+http://dangerousprototypes.com</description>
+<packages>
+<package name="SOT-23">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.8636" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="2.2225" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-3.4925" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="N-MOSFET">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TRANSISTOR_FET_BS170" prefix="Q" uservalue="yes">
+<description>N-Channel Enhancement Mode Field Effect Transistor</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SOT-23" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5839,6 +6006,12 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <part name="RESISTOR1BOOST3" library="rc-master-smd" deviceset="R_" device="0603" value="20k"/>
 <part name="U$1" library="SX1308" library_urn="urn:adsk.eagle:library:30132607" deviceset="MICRO-USB" device="" package3d_urn="urn:adsk.eagle:package:30102216/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q2" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="?20*" device="SST" package3d_urn="urn:adsk.eagle:package:28534/2" technology="1"/>
+<part name="R11" library="rc-master-smd" deviceset="R_" device="0603" value="10k"/>
+<part name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-03-PIN" device="-LONG-PAD"/>
+<part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-LONG-PAD"/>
+<part name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-LONG-PAD"/>
+<part name="Q3" library="dp_devices" deviceset="TRANSISTOR_FET_BS170" device="-SOT-23"/>
 </parts>
 <sheets>
 <sheet>
@@ -5848,11 +6021,14 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <text x="-123.19" y="180.34" size="1.778" layer="91">USB-UART</text>
 <text x="-44.45" y="83.82" size="1.778" layer="91">BUTTON</text>
 <text x="26.67" y="63.5" size="1.778" layer="91">LEDS</text>
-<text x="29.21" y="-8.89" size="1.778" layer="91">POWER</text>
+<text x="26.67" y="-8.89" size="1.778" layer="91">POWER</text>
 <text x="-41.91" y="-54.61" size="0.4064" layer="91">GATE AND DRAIN ARE CHANGE IN REAL PMOSFET</text>
 <text x="-118.11" y="1.27" size="1.778" layer="91">TP4050</text>
 <text x="-24.13" y="1.27" size="1.778" layer="91">out+</text>
-<text x="39.37" y="-74.93" size="1.778" layer="91">DC/DC BOOST</text>
+<text x="44.45" y="-74.93" size="1.778" layer="91">DC/DC BOOST 5v</text>
+<text x="6.35" y="-44.45" size="1.778" layer="91">Sensor LDR</text>
+<text x="29.21" y="-44.45" size="1.778" layer="91">Sensor Soil Hmidity </text>
+<text x="87.63" y="-44.45" size="1.778" layer="91">Valvula solenoide 5v</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="8.89" y="152.4" smashed="yes">
@@ -6074,16 +6250,16 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <attribute name="NAME" x="-49.53" y="-14.9225" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-49.53" y="-19.685" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-2" x="36.83" y="-26.67" smashed="yes">
-<attribute name="NAME" x="39.37" y="-27.432" size="1.524" layer="95"/>
+<instance part="X1" gate="-2" x="85.09" y="-13.97" smashed="yes">
+<attribute name="NAME" x="87.63" y="-14.732" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-1" x="36.83" y="-24.13" smashed="yes">
-<attribute name="NAME" x="39.37" y="-24.892" size="1.524" layer="95"/>
-<attribute name="VALUE" x="36.068" y="-22.733" size="1.778" layer="96"/>
+<instance part="X1" gate="-1" x="85.09" y="-11.43" smashed="yes">
+<attribute name="NAME" x="87.63" y="-12.192" size="1.524" layer="95"/>
+<attribute name="VALUE" x="84.328" y="-10.033" size="1.778" layer="96"/>
 </instance>
-<instance part="S1" gate="G$1" x="13.97" y="-13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.35" y="-10.16" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="3.81" y="-15.24" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="S1" gate="G$1" x="11.43" y="-13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="-10.16" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="1.27" y="-15.24" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="U$9" gate="G$1" x="-41.91" y="-41.91" smashed="yes" rot="R180">
 <attribute name="NAME" x="-44.2214" y="-39.2684" size="1.778" layer="95"/>
@@ -6103,12 +6279,12 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <instance part="SUPPLY1" gate="GND" x="8.89" y="-120.65" smashed="yes">
 <attribute name="VALUE" x="6.985" y="-123.825" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="-2" x="82.55" y="-34.29" smashed="yes">
-<attribute name="NAME" x="85.09" y="-35.052" size="1.524" layer="95"/>
+<instance part="X2" gate="-2" x="85.09" y="-3.81" smashed="yes">
+<attribute name="NAME" x="87.63" y="-4.572" size="1.524" layer="95"/>
 </instance>
-<instance part="X2" gate="-1" x="82.55" y="-31.75" smashed="yes">
-<attribute name="NAME" x="85.09" y="-32.512" size="1.524" layer="95"/>
-<attribute name="VALUE" x="81.788" y="-30.353" size="1.778" layer="96"/>
+<instance part="X2" gate="-1" x="85.09" y="-1.27" smashed="yes">
+<attribute name="NAME" x="87.63" y="-2.032" size="1.524" layer="95"/>
+<attribute name="VALUE" x="84.328" y="0.127" size="1.778" layer="96"/>
 </instance>
 <instance part="C1BOOST" gate="G$1" x="8.89" y="-110.49" smashed="yes" rot="R90">
 <attribute name="VALUE" x="13.0175" y="-114.3" size="1.778" layer="96" rot="R90"/>
@@ -6139,6 +6315,32 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <instance part="GND1" gate="1" x="-158.75" y="129.54" smashed="yes">
 <attribute name="VALUE" x="-161.29" y="127" size="1.778" layer="96"/>
 </instance>
+<instance part="Q2" gate="G$1" x="73.406" y="-28.448" smashed="yes">
+<attribute name="NAME" x="63.246" y="-26.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="63.246" y="-28.448" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="-3.81" y="-60.96" smashed="yes">
+<attribute name="NAME" x="-6.35" y="-59.3725" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-6.35" y="-64.135" size="1.778" layer="96"/>
+</instance>
+<instance part="X5" gate="-1" x="40.64" y="-48.26"/>
+<instance part="X5" gate="-2" x="40.64" y="-50.8"/>
+<instance part="X5" gate="-3" x="40.64" y="-53.34"/>
+<instance part="X4" gate="-2" x="-1.27" y="-52.07" smashed="yes">
+<attribute name="NAME" x="1.27" y="-52.832" size="1.524" layer="95"/>
+</instance>
+<instance part="X4" gate="-1" x="-1.27" y="-49.53" smashed="yes">
+<attribute name="NAME" x="1.27" y="-50.292" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-2.032" y="-48.133" size="1.778" layer="96"/>
+</instance>
+<instance part="X3" gate="-2" x="87.63" y="-52.07" smashed="yes">
+<attribute name="NAME" x="90.17" y="-52.832" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-1" x="87.63" y="-49.53" smashed="yes">
+<attribute name="NAME" x="90.17" y="-50.292" size="1.524" layer="95"/>
+<attribute name="VALUE" x="86.868" y="-48.133" size="1.778" layer="96"/>
+</instance>
+<instance part="Q3" gate="G$1" x="73.66" y="-58.42"/>
 </instances>
 <busses>
 </busses>
@@ -6316,8 +6518,8 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <label x="-26.67" y="-24.13" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="34.29" y1="-26.67" x2="31.75" y2="-26.67" width="0.1524" layer="91"/>
-<label x="24.13" y="-26.67" size="1.778" layer="95"/>
+<wire x1="82.55" y1="-13.97" x2="80.01" y2="-13.97" width="0.1524" layer="91"/>
+<label x="72.39" y="-13.97" size="1.778" layer="95"/>
 <pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
@@ -6344,8 +6546,8 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 </segment>
 <segment>
 <pinref part="X2" gate="-2" pin="S"/>
-<wire x1="80.01" y1="-34.29" x2="72.39" y2="-34.29" width="0.1524" layer="91"/>
-<label x="67.31" y="-36.83" size="1.778" layer="95"/>
+<wire x1="82.55" y1="-3.81" x2="74.93" y2="-3.81" width="0.1524" layer="91"/>
+<label x="69.85" y="-6.35" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
@@ -6357,6 +6559,21 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-160.02" y1="134.62" x2="-158.75" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="-158.75" y1="134.62" x2="-158.75" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="-60.96" x2="1.27" y2="-60.96" width="0.1524" layer="91"/>
+<label x="2.54" y="-60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-1" pin="S"/>
+<wire x1="38.1" y1="-48.26" x2="35.56" y2="-48.26" width="0.1524" layer="91"/>
+<label x="30.48" y="-48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="76.2" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
+<label x="81.28" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -6442,6 +6659,12 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <wire x1="-85.09" y1="76.2" x2="-85.09" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-85.09" y="76.2"/>
 <wire x1="-85.09" y1="76.2" x2="-62.23" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="-3.81" y1="-49.53" x2="-3.81" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-3.81" y1="-45.72" x2="-10.16" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-7.62" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6572,22 +6795,6 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 </net>
 <net name="VCC_USB" class="0">
 <segment>
-<label x="-57.15" y="-39.37" size="1.778" layer="95"/>
-<pinref part="U$9" gate="G$1" pin="+"/>
-<wire x1="-52.07" y1="-41.91" x2="-44.45" y2="-41.91" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="-35.814" y1="-46.228" x2="-35.814" y2="-46.99" width="0.1524" layer="91"/>
-<wire x1="-35.814" y1="-46.99" x2="-34.29" y2="-46.99" width="0.1524" layer="91"/>
-<label x="-34.29" y="-46.99" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-41.91" y1="-59.69" x2="-39.37" y2="-59.69" width="0.1524" layer="91"/>
-<label x="-39.37" y="-59.69" size="1.778" layer="95"/>
-<pinref part="R_TP" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="TP4055" gate="G$1" pin="VCC"/>
 <wire x1="-173.99" y1="-31.75" x2="-173.99" y2="-46.99" width="0.1524" layer="91"/>
 <wire x1="-173.99" y1="-46.99" x2="-158.75" y2="-46.99" width="0.1524" layer="91"/>
@@ -6615,6 +6822,12 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="-160.02" y1="144.78" x2="-156.21" y2="144.78" width="0.1524" layer="91"/>
 <label x="-158.75" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="78.486" y1="-25.908" x2="78.486" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="78.486" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
+<label x="78.74" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -6686,12 +6899,22 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <wire x1="67.31" y1="-90.17" x2="77.47" y2="-90.17" width="0.1524" layer="91"/>
 <junction x="77.47" y="-90.17"/>
 </segment>
+<segment>
+<pinref part="X5" gate="-2" pin="S"/>
+<wire x1="38.1" y1="-50.8" x2="35.56" y2="-50.8" width="0.1524" layer="91"/>
+<label x="30.48" y="-50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-1" pin="S"/>
+<wire x1="85.09" y1="-49.53" x2="78.74" y2="-49.53" width="0.1524" layer="91"/>
+<label x="76.2" y="-48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3.7V" class="0">
 <segment>
-<label x="13.97" y="-19.05" size="1.778" layer="95" rot="R270"/>
+<label x="11.43" y="-19.05" size="1.778" layer="95" rot="R270"/>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="13.97" y1="-19.05" x2="13.97" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="-19.05" x2="11.43" y2="-13.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L_D" gate="G$1" pin="1"/>
@@ -6822,8 +7045,8 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <pinref part="R_VCC" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="34.29" y1="-24.13" x2="31.75" y2="-24.13" width="0.1524" layer="91"/>
-<label x="24.13" y="-24.13" size="1.778" layer="95"/>
+<wire x1="82.55" y1="-11.43" x2="80.01" y2="-11.43" width="0.1524" layer="91"/>
+<label x="72.39" y="-11.43" size="1.778" layer="95"/>
 <pinref part="X1" gate="-1" pin="S"/>
 </segment>
 <segment>
@@ -6847,11 +7070,10 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <pinref part="U$9" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<wire x1="19.05" y1="-31.75" x2="31.75" y2="-31.75" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="16.51" y1="-16.51" x2="16.51" y2="-13.97" width="0.1524" layer="91"/>
-<wire x1="19.05" y1="-31.75" x2="19.05" y2="-16.51" width="0.1524" layer="91"/>
-<wire x1="19.05" y1="-16.51" x2="16.51" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="-16.51" x2="13.97" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="-16.51" x2="13.97" y2="-16.51" width="0.1524" layer="91"/>
+<label x="17.78" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -6886,8 +7108,16 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <net name="SOLAR+" class="0">
 <segment>
 <pinref part="X2" gate="-1" pin="S"/>
-<wire x1="80.01" y1="-31.75" x2="72.39" y2="-31.75" width="0.1524" layer="91"/>
-<label x="67.31" y="-29.21" size="1.778" layer="95"/>
+<wire x1="82.55" y1="-1.27" x2="74.93" y2="-1.27" width="0.1524" layer="91"/>
+<label x="69.85" y="1.27" size="1.778" layer="95"/>
+<wire x1="68.326" y1="-1.27" x2="82.55" y2="-1.27" width="0.1524" layer="91"/>
+<junction x="82.55" y="-1.27"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="68.326" y1="-30.988" x2="60.96" y2="-30.988" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-30.988" x2="60.96" y2="-30.48" width="0.1524" layer="91"/>
+<label x="55.88" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6919,6 +7149,77 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <wire x1="22.29" y1="-102.87" x2="19.05" y2="-102.87" width="0.1524" layer="91"/>
 <wire x1="19.05" y1="-102.87" x2="19.05" y2="-110.49" width="0.1524" layer="91"/>
 <pinref part="RESISTOR1BOOST3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="VCC_PMOSFET" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="78.486" y1="-30.988" x2="86.36" y2="-30.988" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-30.988" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
+<label x="81.28" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-35.814" y1="-46.228" x2="-35.814" y2="-46.99" width="0.1524" layer="91"/>
+<wire x1="-35.814" y1="-46.99" x2="-34.29" y2="-46.99" width="0.1524" layer="91"/>
+<label x="-34.29" y="-46.99" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-41.91" y1="-59.69" x2="-39.37" y2="-59.69" width="0.1524" layer="91"/>
+<label x="-39.37" y="-59.69" size="1.778" layer="95"/>
+<pinref part="R_TP" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<label x="-62.23" y="-41.91" size="1.778" layer="95"/>
+<pinref part="U$9" gate="G$1" pin="+"/>
+<wire x1="-52.07" y1="-41.91" x2="-44.45" y2="-41.91" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO35" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO35"/>
+<wire x1="-8.89" y1="139.7" x2="-15.24" y2="139.7" width="0.1524" layer="91"/>
+<label x="-20.32" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="-3.81" y1="-52.07" x2="-10.16" y2="-52.07" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-52.07" x2="-10.16" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-60.96" x2="-8.89" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-12.7" y="-53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO34" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO34"/>
+<wire x1="-8.89" y1="142.24" x2="-15.24" y2="142.24" width="0.1524" layer="91"/>
+<label x="-20.32" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-3" pin="S"/>
+<wire x1="38.1" y1="-53.34" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
+<label x="30.48" y="-53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<pinref part="X3" gate="-2" pin="S"/>
+<wire x1="76.2" y1="-53.34" x2="76.2" y2="-52.07" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-52.07" x2="85.09" y2="-52.07" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO25" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO25"/>
+<wire x1="-8.89" y1="132.08" x2="-15.24" y2="132.08" width="0.1524" layer="91"/>
+<label x="-20.32" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="71.12" y1="-60.96" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
+<label x="58.42" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

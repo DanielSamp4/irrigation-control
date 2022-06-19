@@ -2109,6 +2109,26 @@ chip tantalum</description>
 </library>
 <library name="SX1308" urn="urn:adsk.eagle:library:30132607">
 <packages>
+<package name="S3MB" library_version="1" library_locally_modified="yes">
+<smd name="-" x="-2.3" y="0" dx="2.4" dy="2.8" layer="1"/>
+<smd name="+" x="2.3" y="0" dx="2.4" dy="2.8" layer="1"/>
+<wire x1="-2.8" y1="-2.05" x2="2.8" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="2.8" y1="-2.05" x2="2.8" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-2.05" x2="-2.8" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="2.1" x2="-0.8" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="2.1" x2="2.8" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="2.1" x2="-0.8" y2="-2" width="0.127" layer="21"/>
+</package>
+<package name="SLW6045S221MST" library_version="1" library_locally_modified="yes">
+<smd name="2" x="2.425" y="0" dx="2.26" dy="4.52" layer="1"/>
+<smd name="1" x="-2.425" y="0" dx="2.26" dy="4.52" layer="1"/>
+<wire x1="-3.3" y1="-3" x2="-3.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-3" x2="3.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-3" x2="3.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="2.3" x2="-3.3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="3" x2="3.3" y2="3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3" x2="3.3" y2="2.3" width="0.127" layer="21"/>
+</package>
 <package name="MICRO-USB-2" urn="urn:adsk.eagle:footprint:30102184/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
 <rectangle x1="-3.675" y1="-0.5" x2="3.675" y2="4.5" layer="46"/>
 <rectangle x1="4.55" y1="4.2" x2="5.15" y2="5.9" layer="46"/>
@@ -2135,26 +2155,6 @@ chip tantalum</description>
 <hole x="-2" y="2.49" drill="0.55"/>
 <hole x="2" y="2.49" drill="0.55"/>
 </package>
-<package name="S3MB" library_version="1" library_locally_modified="yes">
-<smd name="-" x="-2.3" y="0" dx="2.4" dy="2.8" layer="1"/>
-<smd name="+" x="2.3" y="0" dx="2.4" dy="2.8" layer="1"/>
-<wire x1="-2.8" y1="-2.05" x2="2.8" y2="-2.05" width="0.127" layer="21"/>
-<wire x1="2.8" y1="-2.05" x2="2.8" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-2.8" y1="-2.05" x2="-2.8" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-2.8" y1="2.1" x2="-0.8" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="2.1" x2="2.8" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="2.1" x2="-0.8" y2="-2" width="0.127" layer="21"/>
-</package>
-<package name="SLW6045S221MST" library_version="1" library_locally_modified="yes">
-<smd name="2" x="2.425" y="0" dx="2.26" dy="4.52" layer="1"/>
-<smd name="1" x="-2.425" y="0" dx="2.26" dy="4.52" layer="1"/>
-<wire x1="-3.3" y1="-3" x2="-3.3" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-3" x2="3.3" y2="-3" width="0.127" layer="21"/>
-<wire x1="3.3" y1="-3" x2="3.3" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="2.3" x2="-3.3" y2="3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="3" x2="3.3" y2="3" width="0.127" layer="21"/>
-<wire x1="3.3" y1="3" x2="3.3" y2="2.3" width="0.127" layer="21"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="MICRO-USB-2" urn="urn:adsk.eagle:package:30102216/1" type="box" library_version="1" library_locally_modified="yes">
@@ -2164,20 +2164,6 @@ chip tantalum</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="MICRO-USB" urn="urn:adsk.eagle:symbol:30102138/1" library_version="1" library_locally_modified="yes">
-<description>Micro USB connector</description>
-<wire x1="12.7" y1="0" x2="12.7" y2="-15.24" width="0.508" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="0" y2="-15.24" width="0.508" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.508" layer="94"/>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.508" layer="94"/>
-<text x="0.254" y="3.048" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="0.254" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="D-" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="D+" x="15.24" y="-7.62" length="short" rot="R180"/>
-<pin name="ID" x="15.24" y="-10.16" length="short" rot="R180"/>
-<pin name="GND" x="15.24" y="-12.7" length="short" direction="pwr" rot="R180"/>
-</symbol>
 <symbol name="DIODE" urn="urn:adsk.eagle:symbol:30102135/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
 <wire x1="1.27" y1="1.905" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0" x2="1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -2203,30 +2189,22 @@ chip tantalum</description>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
 </symbol>
+<symbol name="MICRO-USB" urn="urn:adsk.eagle:symbol:30102138/1" library_version="1" library_locally_modified="yes">
+<description>Micro USB connector</description>
+<wire x1="12.7" y1="0" x2="12.7" y2="-15.24" width="0.508" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="0" y2="-15.24" width="0.508" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.508" layer="94"/>
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.508" layer="94"/>
+<text x="0.254" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="0.254" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="D-" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="D+" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="ID" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="GND" x="15.24" y="-12.7" length="short" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="MICRO-USB" urn="urn:adsk.eagle:component:30102223/1" library_version="1" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="MICRO-USB" x="-5.08" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="MICRO-USB-2">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="ID" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:30102216/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="S3MB" library_version="1" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
@@ -2253,6 +2231,28 @@ chip tantalum</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICRO-USB" urn="urn:adsk.eagle:component:30102223/1" library_version="1" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="MICRO-USB" x="-5.08" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="MICRO-USB-2">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30102216/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5768,8 +5768,6 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <part name="T2" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="BC846" device="" package3d_urn="urn:adsk.eagle:package:28738/2"/>
 <part name="R12" library="rc-master-smd" deviceset="R_" device="0603" value="10k"/>
 <part name="R13" library="rc-master-smd" deviceset="R_" device="0603" value="10k"/>
-<part name="U$1" library="SX1308" library_urn="urn:adsk.eagle:library:30132607" deviceset="MICRO-USB" device="" package3d_urn="urn:adsk.eagle:package:30102216/1"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rc-master-smd" deviceset="R_" device="0603" value="4.7k"/>
 <part name="R2" library="rc-master-smd" deviceset="R_" device="0603" value="1k"/>
 <part name="R3" library="rc-master-smd" deviceset="R_" device="0603" value="1k"/>
@@ -5839,6 +5837,8 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <part name="SS34*" library="SS14" deviceset="SS14" device=""/>
 <part name="U3" library="MT3608" deviceset="MT3608" device=""/>
 <part name="RESISTOR1BOOST3" library="rc-master-smd" deviceset="R_" device="0603" value="20k"/>
+<part name="U$1" library="SX1308" library_urn="urn:adsk.eagle:library:30132607" deviceset="MICRO-USB" device="" package3d_urn="urn:adsk.eagle:package:30102216/1"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5878,13 +5878,6 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <instance part="R13" gate="G$1" x="-146.05" y="50.8" smashed="yes">
 <attribute name="NAME" x="-148.59" y="52.3875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-148.59" y="47.625" size="1.778" layer="96"/>
-</instance>
-<instance part="U$1" gate="G$1" x="-160.02" y="139.7" smashed="yes">
-<attribute name="NAME" x="-159.766" y="142.748" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-160.02" y="139.954" size="1.778" layer="96"/>
-</instance>
-<instance part="GND1" gate="1" x="-143.51" y="121.92" smashed="yes">
-<attribute name="VALUE" x="-146.05" y="119.38" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="-102.87" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="-101.2825" y="111.76" size="1.778" layer="95" rot="R270"/>
@@ -6139,6 +6132,13 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <instance part="RESISTOR1BOOST3" gate="G$1" x="24.13" y="-110.49" smashed="yes" rot="R180">
 <attribute name="VALUE" x="26.67" y="-107.315" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$1" gate="G$1" x="-175.26" y="147.32" smashed="yes">
+<attribute name="NAME" x="-175.006" y="150.368" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-175.26" y="147.574" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="-158.75" y="129.54" smashed="yes">
+<attribute name="VALUE" x="-161.29" y="127" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6192,12 +6192,6 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-144.78" y1="127" x2="-143.51" y2="127" width="0.1524" layer="91"/>
-<wire x1="-143.51" y1="127" x2="-143.51" y2="124.46" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND@1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -6358,29 +6352,35 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <wire x1="-41.91" y1="-34.29" x2="-31.75" y2="-34.29" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="-34.29" x2="-31.75" y2="-31.75" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-160.02" y1="134.62" x2="-158.75" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="134.62" x2="-158.75" y2="132.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D+" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D+"/>
-<wire x1="-144.78" y1="132.08" x2="-140.97" y2="132.08" width="0.1524" layer="91"/>
-<label x="-140.97" y="132.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="D+"/>
 <wire x1="-118.11" y1="134.62" x2="-123.19" y2="134.62" width="0.1524" layer="91"/>
 <label x="-123.19" y="134.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D+"/>
+<wire x1="-160.02" y1="139.7" x2="-156.21" y2="139.7" width="0.1524" layer="91"/>
+<label x="-156.21" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D-" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D-"/>
-<wire x1="-144.78" y1="134.62" x2="-140.97" y2="134.62" width="0.1524" layer="91"/>
-<label x="-140.97" y="134.62" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="D-"/>
 <wire x1="-118.11" y1="132.08" x2="-123.19" y2="132.08" width="0.1524" layer="91"/>
 <label x="-123.19" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D-"/>
+<wire x1="-160.02" y1="142.24" x2="-156.21" y2="142.24" width="0.1524" layer="91"/>
+<label x="-156.21" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD3V3" class="0">
@@ -6572,11 +6572,6 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 </net>
 <net name="VCC_USB" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="-144.78" y1="137.16" x2="-140.97" y2="137.16" width="0.1524" layer="91"/>
-<label x="-143.51" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <label x="-57.15" y="-39.37" size="1.778" layer="95"/>
 <pinref part="U$9" gate="G$1" pin="+"/>
 <wire x1="-52.07" y1="-41.91" x2="-44.45" y2="-41.91" width="0.1524" layer="91"/>
@@ -6615,6 +6610,11 @@ Source: &lt;a href="https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/re
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <label x="-179.07" y="-36.83" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="-160.02" y1="144.78" x2="-156.21" y2="144.78" width="0.1524" layer="91"/>
+<label x="-158.75" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
