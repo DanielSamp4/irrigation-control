@@ -9,6 +9,7 @@ This project consist in creat a system that can irrigate plants based on day per
 ### System
 
 <div align="center"><img alt="Block Diagram" width="580" src="docs/Image/Block-Diagram.png" />
+<div align="center"><img alt="Schematic" width="580" src="docs/Image/SCH.PNG" />
 
  In summary, the system is made to charge the battery with solar pannels or power grid (giving priority to the power grid), and power a ESP32 that will be the brain operation, that will check if LDR and Soil Hmidity Sensor get in determinate condition, and will trigger the circuit switch to activate solenoide valvula, therefore irrigating a plant.
  
