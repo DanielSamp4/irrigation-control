@@ -1,10 +1,10 @@
 # Hardware
 
 ### Schematic
-<div align="center"><img alt="Schematic" width="580" src="Hardware/SCH.PNG" />
+<div align="center"><img alt="Schematic" width="580" src="docs/Image/SCH.PNG" />
 
 ### Board
-<div align="center"><img alt="Board" width="580" src="Hardware/BRD.PNG" />
+<div align="center"><img alt="Board" width="580" src="docs/Image/BRD.PNG" />
 
 ### Manufactoring
-<div align="center"><img alt="Manufactoring" width="580" src="Hardware/Manufactore.PNG" />
+<div align="center"><img alt="Manufactoring" width="580" src="docs/Image/Manufactore.PNG" />
